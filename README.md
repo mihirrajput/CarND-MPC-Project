@@ -8,11 +8,11 @@ Model Predictive Control is an optimization problem. Our objective is to minimiz
 
 The cost function defined above is subject to the following constraints:
 * Car should follow laws of physics i.e. Kinematic equations of motion.
- * px = px + v * cos(psi) * dt
- * py = py + v * sin(psi) * dt
- * psi = psi + v * delta * dt / Lf
- * cte = f(x) - y position of the car
- * epsi = psi - atan(f'(x))
+  * px = px + v * cos(psi) * dt
+  * py = py + v * sin(psi) * dt
+  * psi = psi + v * delta * dt / Lf
+  * cte = f(x) - y position of the car
+  * epsi = psi - atan(f'(x))
 * Steering value is always between [-25 deg, +25 deg].
 * Throttle is always between [-1, +1].
 * The state variables can take any real value between the min, max values stored by a double data type.
