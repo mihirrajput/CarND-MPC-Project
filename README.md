@@ -21,7 +21,10 @@ Other important thing to address is the handling of latency between generating a
 * px = px + v * cos(psi) * latency
 * py = py + v * sin(psi) * latency
 
-
+Tuning:
+* N = 10 and dt = 1.1.
+* Before chosing the above values I tried N = 25 and dt = 0.05. But then I realized that we had latency and dt>=latency. Also larger values of N with small dt values were slowing down the computations.
+* With large dt greater than latency and large N the model computations would get inaccurate.
 ---
 
 ## Dependencies
