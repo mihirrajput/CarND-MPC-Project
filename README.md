@@ -25,6 +25,11 @@ Tuning:
 * N = 10 and dt = 1.1.
 * Before chosing the above values I tried N = 25 and dt = 0.05. But then I realized that we had latency and dt>=latency. Also larger values of N with small dt values were slowing down the computations.
 * With large dt greater than latency and large N the model predictions would get inaccurate.
+
+Further Improvements:
+* Implementing a fast way to compute the shortest distance from car's position to the polynomial fit to the way points.
+* Implementing a better vehicle model.
+* Accounting for "traffic" in the cost function.
 ---
 
 ## Dependencies
