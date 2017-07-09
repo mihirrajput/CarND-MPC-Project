@@ -30,6 +30,9 @@ Further Improvements:
 * Implementing a fast way to compute the shortest distance from car's position to the polynomial fit to the way points.
 * Implementing a better vehicle model.
 * Accounting for "traffic" in the cost function.
+
+Video:
+https://youtu.be/4X451IdAby4
 ---
 
 ## Dependencies
