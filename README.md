@@ -1,11 +1,10 @@
 # CarND-Controls-MPC
-Self-Driving Car Engineer Nanodegree Program
 Model Predictive Control is an optimization problem. Our objective is to minimize the cost function subject to certain constraints. In this project our high level objective is that the self driving car should complete the lap in finite time and in a safe manner. These requirements drive our cost function to penalize following behavior of the car:
 * Drifiting away from the center of the lane (cross track error).
 * Having an undesired orientation (error in heading). 
 * Stopping in between the lap.
-* Minimum use of actuators (steer and throttle).
-* Gradual change in actuator values.
+* Maximum use of actuators (steer and throttle).
+* Extreme changes in actuator values.
 ---
 
 ## Dependencies
